@@ -1,1 +1,1 @@
-# Polkadot-Academy_Codigo-Brazuca
+Study repository for the Polkadot course from Código Brazuca.
