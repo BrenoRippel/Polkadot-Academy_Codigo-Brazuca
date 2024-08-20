@@ -1,0 +1,8 @@
+temperature = int(input("What is the current temperature in Celsius? "))
+
+if temperature > 30:
+    print("It's hot")
+elif temperature < 15:
+    print("It's cold")
+else:
+    print("It's pleasant")

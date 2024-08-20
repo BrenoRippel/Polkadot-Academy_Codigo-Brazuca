@@ -1,0 +1,9 @@
+sentence = input("Enter a sentence: ")
+letter = input("Enter the letter you want to count: ")
+
+count = 0
+for character in sentence:
+    if character.lower() == letter.lower():
+        count += 1
+
+print("The letter " + letter + " appears " + str(count) + " times in the sentence '" + sentence + "'.")
