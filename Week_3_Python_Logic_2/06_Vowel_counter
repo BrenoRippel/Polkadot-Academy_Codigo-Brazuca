@@ -1,0 +1,9 @@
+sentence = input("Enter a sentence to count vowels: ")
+vowels = "aeiouAEIOU"
+count = 0
+
+for character in sentence:
+    if character in vowels:
+        count += 1
+
+print("The sentence contains", count, "vowels.")

@@ -1,0 +1,7 @@
+celsius = int(input("Enter the temperature in Celsius: "))
+
+fahrenheit = (celsius * 9/5) + 32
+
+kelvin = celsius + 273.15
+
+print("The temperature of", celsius, "degrees Celsius is equivalent to", fahrenheit, "degrees Fahrenheit and", kelvin, "degrees Kelvin.")

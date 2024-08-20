@@ -1,0 +1,19 @@
+import unicodedata
+
+def remove_accents(text):
+    nfkd = unicodedata.normalize('NFKD', text)
+    text_without_accents = ''.join([c for c in nfkd if not unicodedata.combining(c)])
+    return text_without_accents
+
+def check_palindrome(text):
+    clean_text = remove_accents(text)
+    clean_text = ''.join(clean_text.split()).lower()
+
+    if clean_text == clean_text[::-1]:
+        print("It is a palindrome!")
+    else:
+        print("It is not a palindrome.")
+
+user_input = input("Enter a word or phrase: ")
+
+check_palindrome(user_input)

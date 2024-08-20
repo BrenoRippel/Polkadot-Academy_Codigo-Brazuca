@@ -1,0 +1,14 @@
+n = int(input("How many terms of the Fibonacci sequence would you like to see? "))
+
+fibonacci = [0, 1]
+
+if n == 1:
+    print("Fibonacci sequence:", [fibonacci[0]])
+elif n == 2:
+    print("Fibonacci sequence:", fibonacci)
+else:
+    for i in range(2, n):
+        next_term = fibonacci[i-1] + fibonacci[i-2]
+        fibonacci.append(next_term)
+
+    print("Fibonacci sequence:", fibonacci)

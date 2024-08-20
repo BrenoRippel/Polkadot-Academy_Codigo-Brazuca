@@ -1,0 +1,11 @@
+grade = int(input("Enter multiple grades to calculate the average, enter -1 to stop: "))
+sum = 0
+count = 0
+
+while grade != -1:
+    count += 1
+    sum += grade
+    grade = int(input("Enter another grade to calculate the average: "))
+
+average = sum / count
+print("The average of all grades is:", average)

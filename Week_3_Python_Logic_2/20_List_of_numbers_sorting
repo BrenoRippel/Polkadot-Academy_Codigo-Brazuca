@@ -1,0 +1,13 @@
+numbers = []
+
+number = int(input("Enter a number to add to the list (or 0 to stop): "))
+
+while number != 0:
+    numbers.append(number)
+    number = int(input("Enter a number to add to the list (or 0 to stop): "))
+
+largest = max(numbers)
+smallest = min(numbers)
+average = sum(numbers) / len(numbers)
+
+print("In the list of entered numbers:", numbers, "the largest number is", largest, ", the smallest number is", smallest, "and the average of the values is", average, ".")

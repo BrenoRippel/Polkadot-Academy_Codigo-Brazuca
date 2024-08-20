@@ -1,0 +1,11 @@
+grade1 = float(input("Enter the first grade: "))
+grade2 = float(input("Enter the second grade: "))
+grade3 = float(input("Enter the third grade: "))
+
+weight1 = 2
+weight2 = 3
+weight3 = 5
+
+average = (grade1 * weight1 + grade2 * weight2 + grade3 * weight3) / (weight1 + weight2 + weight3)
+
+print("The weighted average is:", average)
