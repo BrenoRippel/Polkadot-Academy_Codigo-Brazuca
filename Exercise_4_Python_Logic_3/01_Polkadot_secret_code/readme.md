@@ -14,8 +14,10 @@
 
      ![](image/image4.png) 
        - If a number is a multiple of both 3 and 5, it is skipped.
+
      ![](image/image5.png) 
        - If a number is a multiple of 3, it is added to `value`.
+       
      ![](image/image6.png) 
        - If a number is a multiple of 5, it is subtracted from `value`.
 
