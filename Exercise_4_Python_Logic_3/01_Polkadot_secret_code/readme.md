@@ -2,6 +2,7 @@
 ## Full code
 ![](image/image11.png)
 
+## Code Breakdown
 ![](image/image1.png)
    - The `decipher_code(start, end)` function processes a range of numbers defined by `start` and `end`.
 

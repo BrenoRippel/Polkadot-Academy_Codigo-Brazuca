@@ -2,6 +2,7 @@
 ## Full code
 ![](/image/image13.png)
 
+## Code Breakdown
 ![](image/image1.png)
    - The `generate_bingo_card` function generates a Bingo card by creating a list of 5 unique random numbers between 1 and 75. These numbers represent the numbers on the player's card.
 

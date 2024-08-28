@@ -2,6 +2,7 @@
 ## Full code
 ![](image/image10.png)
 
+## Code Breakdown
 ![](image/image1.png)
    - The `prime_number(number)` function checks if a number is prime by testing divisibility up to its square root, ensuring efficiency.
 
