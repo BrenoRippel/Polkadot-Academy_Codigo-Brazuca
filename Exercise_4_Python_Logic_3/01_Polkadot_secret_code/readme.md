@@ -1,4 +1,4 @@
-# Secret code explained
+# Polkadot Secret Code
 ## Full code
 ![](image/image11.png)
 

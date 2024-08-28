@@ -1,4 +1,4 @@
-# Guessing bingo explained
+# Polkadot Guessing Bingo
 ## Full code
 ![](/image/image13.png)
 

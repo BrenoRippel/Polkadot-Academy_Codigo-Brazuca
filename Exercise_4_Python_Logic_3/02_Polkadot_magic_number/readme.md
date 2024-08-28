@@ -1,4 +1,4 @@
-# Magic number explained
+# Polkadot Magic Number
 ## Full code
 ![](image/image10.png)
 
