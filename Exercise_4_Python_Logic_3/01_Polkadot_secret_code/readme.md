@@ -11,12 +11,13 @@
 
 ![](image/image3.png)
    - For each number in the range, the function follows these rules:
+
      ![](image/image4.png) 
-       If a number is a multiple of both 3 and 5, it is skipped.
+       - If a number is a multiple of both 3 and 5, it is skipped.
      ![](image/image5.png) 
-       If a number is a multiple of 3, it is added to `value`.
+       - If a number is a multiple of 3, it is added to `value`.
      ![](image/image6.png) 
-       If a number is a multiple of 5, it is subtracted from `value`.
+       - If a number is a multiple of 5, it is subtracted from `value`.
 
 ![](image/image7.png)
    - After processing all numbers, the function returns the final `value`, representing the result of the additions, subtractions, and skips.

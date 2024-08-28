@@ -14,12 +14,13 @@
 
 ![](image/image4.png)
    - The `play_bingo()` function is where the main game logic is implemented:
+
       ![](image/image5.png) 
-      It first prints a welcome message: "Welcome to Polkadot guessing bingo!"
+      - It first prints a welcome message: "Welcome to Polkadot guessing bingo!"
       ![](image/image6.png) 
-      It generates the Bingo card using the `generate_bingo_card` function and initializes a set to keep track of drawn numbers and an attempt counter.
+      - It generates the Bingo card using the `generate_bingo_card` function and initializes a set to keep track of drawn numbers and an attempt counter.
       ![](image/image7.png) 
-      The game then enters a loop that continues until all numbers on the Bingo card are guessed correctly.
+      - The game then enters a loop that continues until all numbers on the Bingo card are guessed correctly.
 
    - Within the loop:
       ![](image/image8.png) 
