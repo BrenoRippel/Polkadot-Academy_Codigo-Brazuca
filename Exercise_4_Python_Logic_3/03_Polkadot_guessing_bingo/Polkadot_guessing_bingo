@@ -1,0 +1,45 @@
+import random
+
+def generate_bingo_card():
+    return random.sample(range(1, 76), 5)
+
+def draw_number(drawn_numbers):
+    while True:
+        number = random.randint(1, 75)
+        if number not in drawn_numbers:
+            drawn_numbers.add(number)
+            return number
+
+def guess_number(drawn_number):
+    number = int(input("Guess a number between 1 and 75: "))
+    while number != drawn_number:
+        if number < drawn_number:
+            number = int(input("Try a higher number! "))
+        else:
+            number = int(input("Try a lower number! "))
+    print("You got it!")
+
+def play_bingo():
+    print("Welcome to Polkadot guessing bingo!")
+
+    bingo_card = generate_bingo_card()
+    drawn_numbers = set()
+    attempts = 0
+    
+    print(f"Here is your Bingo card: {bingo_card}")
+
+    while bingo_card:
+        attempts += 1
+        drawn_number = draw_number(drawn_numbers)
+        
+        guess_number(drawn_number)
+
+        if drawn_number in bingo_card:
+            bingo_card.remove(drawn_number)
+            print(f"You matched a number! Remaining card: {bingo_card}")
+        else:
+            print(f"You guessed the number right, but it's not on your card.")
+        
+    print(f"Bingo! You completed the card in {attempts} draws.")
+
+play_bingo()

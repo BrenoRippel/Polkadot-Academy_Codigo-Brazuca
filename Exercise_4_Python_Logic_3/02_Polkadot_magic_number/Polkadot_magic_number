@@ -1,0 +1,27 @@
+def prime_number(number):
+    if number > 1:
+        for i in range(2, int(number ** 0.5) + 1):
+            if number % i == 0:
+                return False
+        return True
+    return False
+
+def sum_digits(number):
+    total = 0
+    while number > 0:
+        total += number % 10
+        number //= 10
+    return total
+
+def find_magic_number(start, end):
+    for number in range(start, end + 1):
+        if prime_number(number) and sum_digits(number) % 2 != 0:
+            return f"The magic number is {number}"
+    return "Magic Number not found in interval"
+
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+
+magic_number = find_magic_number(start, end)
+
+print(magic_number)
