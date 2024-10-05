@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas Price Simulator - Polkadot</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/polkadot-logo.png" type="image/png" />
+  </head>
+  <body>
+    <main id="central-column">
+      <header>
+        <img id="polkadot-logo"
+          src="assets/polkadot-logo.png"
+          alt="Polkadot logo representing the Polkadot network"
+          class="logo"
+        />
+        <h1>Gas Price Simulator - Polkadot</h1>
+      </header>
+
+      <div id="transaction-counter" style="display: none;">
+        Simulated Transactions: 0
+      </div>
+
+      <section id="gas-form-container">
+        <form id="gas-form" aria-label="Gas price calculation form">
+          <label for="transaction-value">Transaction Value (DOT):</label>
+          <input type="number" id="transaction-value" required min="0.01" />
+
+          <label for="complexity">Transaction Complexity:</label>
+          <select id="complexity" required>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <label for="currency-conversion">Convert to (optional):</label>
+          <select id="currency-conversion">
+            <option value="">Select a currency</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="BRL">BRL</option>
+          </select>
+
+          <button type="button" id="calculate">Calculate Gas Price</button>
+        </form>
+      </section>
+
+      <div id="result"></div>
+    </main>
+
+    <section id="history-container" style="display: none;">
+      <h3>Transaction History</h3>
+      <div id="history"></div>
+    </section>
+
+    <div class="toggle-container">
+      <label class="toggle-switch" aria-label="Toggle theme">
+        <input type="checkbox" id="theme-toggle" checked />
+        <span class="slider"></span>
+      </label>
+      <span>Change Theme</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
